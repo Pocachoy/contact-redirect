@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакт Виктора Бузыкина</title>
+    <script>
+        function redirect() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/iPhone|iPad|iPod/i.test(userAgent)) {
+                // Ссылка на карточку для iPhone
+                window.location.href = "https://drive.google.com/uc?export=download&id=1WE03JfMt23VG6qCSaNYNW7NbhOUrD5qT";
+            } else if (/Android/i.test(userAgent)) {
+                // Ссылка на карточку для Android
+                window.location.href = "https://drive.google.com/uc?export=download&id=2XYZ2DEF3GHI4JKLM5NOP6QRST";
+            } else {
+                // Если не удалось определить устройство
+                alert("Устройство не поддерживается. Пожалуйста, скачайте контакт вручную.");
+            }
+        }
+    </script>
+</head>
+<body onload="redirect()">
+    <h1>Перенаправление на карточку контакта Виктора Бузыкина...</h1>
+    <p>Если перенаправление не работает, нажмите одну из ссылок ниже:</p>
+    <ul>
+        <li><a href="https://drive.google.com/uc?export=download&id=1WE03JfMt23VG6qCSaNYNW7NbhOUrD5qT">Скачать для iPhone</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=2XYZ2DEF3GHI4JKLM5NOP6QRST">Скачать для Android</a></li>
+    </ul>
+</body>
+</html>
